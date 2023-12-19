@@ -34,7 +34,7 @@ server = function(input, output){
     })
   output$hasil <- renderPlot({
     ggplot(plotData(), aes (x,y))+
-      geom_point()+
+      geom_line()+
       labs(title=paste('Hasil plot', input$datanya))
   })
   }
